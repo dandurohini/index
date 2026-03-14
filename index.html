@@ -1,39 +1,24 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Flower</title>
-</head>
-
-<body>
-
-<h1>Create an image after 5 seconds</h1>
-<img src ="l.png" width="30px">
-<a href="#">Microsoft 365</a> |
-<a href="#">Copilot</a> |
-<a href="#">Team</a> |
-<a href="#">website</a>
-
-<div id="imageContainer"></div>
-<script>
-setTimeout(function() {
-
-    let img = document.createElement("img");
-    img.src = "j.avif" ;
-    document.getElementById("imageContainer").innerHTML="";
-    document.getElementById("imageContainer").appendChild(img);
-
-}, 5000);
-setTimeout(function() {
-
-    let img = document.createElement("img");
-    img.src = "i.avif";
-    document.getElementById("imageContainer").innerHTML="";
-    document.getElementById("imageContainer").appendChild(img);
-
-}, 6000);
-</script>
-
-</body>
+<html>
+    <head>
+        <title>JAVA SCRIPT</title>
+    </head>
+    <body>
+        <h1 id="headings">HELLO WORLD</h1>
+        <h2 id="headings">HOW ARE YOU</h2>
+        <p class="para 1">HAVE A GREAT DAY</p>
+        <h1 id="headings">this is heading</h1>
+        <button onclick="showMe()">clickme</button>
+        <script>
+            document.getElementById("headings").innerHTML="WELCOME"
+            document.getElementByClass("para1")[0].innerHTML="NICE TO MEET YOU"
+            document.getElementByTagName("h2").innerHTML="This is a new tag"
+            let newElement=document.createElement("h3")
+            newElement.innerHTML="BYEE"
+            document.body.appendChild(newElement)
+            document.getElementById("headings").remove()
+            function showMe(){
+                document.body.style.backgroundColor=" PINK ";
+            }
+        </script>
+    </body>
 </html>
